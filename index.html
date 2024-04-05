@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Adrien Bermejo</title>
+    <link rel="icon shortcut" href="je suis detourre.png">
+    <link rel="stylesheet" href="stylesite.css">
+  </head>
+  <header>
+    <div class="logo">
+      <span>Adrien Bermejo</span>
+    </div>
+    <nav>
+        <button onclick="showSection('Profile')">Mon Profil</button>
+        <button onclick="showSection('Competences')">Mes compétences</button>
+        <button onclick="showSection('Stages')">Stages</button>
+        <button onclick="showSection('Travaux')">Mes travaux</button>
+        <button onclick="showSection('Veille')">Ma veille</button>
+        <button onclick="showSection('Feuille')">Feuille synthèse</button>
+    </nav>
+</header>
+
+    <body>        
+        <script>
+          
+          function showSection(sectionId) {
+            // Get an array of all section elements
+            var sections = document.querySelectorAll('.section');
+          
+            // Hide all sections
+            sections.forEach(function(section) {
+              section.style.display = 'none';
+            });
+          
+            // Show the requested section
+            document.getElementById(sectionId).style.display = 'block';
+          }
+          window.onload = function(){
+            showSection('Profile');
+          }
+
+        </script>
+        <div class="fogwrapper">
+          <div id="foglayer_01">
+              <div class="image01"></div>
+              <div class="image02"></div>
+          </div>
+          <div id="foglayer_02">
+              <div class="image01"></div>
+              <div class="image02"></div>
+          </div>
+          <div id="foglayer_03">
+              <div class="image01"></div>
+              <div class="image02"></div>
+          </div>
+      </div>
+        
+    <div id="Profile" class="section">
+      <h2>Adrien Bermejo Garcia</h2>
+      <img src="adrienbermejogarcia.jpg" class="MaPhoto">
+      <p>Je suis en deuxième année de BTS SIO option SLAM et je suis passionné par l'informatique.
+        J'ai fait des études en informatique en commençant à partir du lycée avec l'option ISN.</br>
+      </p>
+
+    </div>
+    
+    <div id="Competences" class="section">
+      <h2 id="Perks">Mes Compétences</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="Images/html 5 logo perk.png" class="PerksImg">
+          <span class="skill-name">HTML 5</span>
+        </div>
+        <div class="skill">
+          <img src="Images/csharp logo perk.png" class="PerksImg">
+          <span class="skill-name">CSHARP</span>
+        </div>
+        <div class="skill">
+          <img src="Images/python logo perk.png" class="PerksImg">
+          <span class="skill-name">PYTHON</span>
+        </div>
+        <div class="skill">
+          <img src="Images/php logo perk.png" class="PerksImg">
+          <span class="skill-name">PHP</span>
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="Images/net logo perk.png" class="PerksImg">
+          <span class="skill-name">.NET</span>
+        </div>
+        <div class="skill">
+          <img src="Images/laravel logo perk.png" class="PerksImg">
+          <span class="skill-name">LARAVEL</span>
+        </div>
+        <div class="skill">
+          <img src="Images/gitlab logo perk.png" class="PerksImg">
+          <span class="skill-name">GITLAB</span>
+        </div>
+        <div class="skill">
+          <img src="Images/ubuntu logo perk.png" class="PerksImg">
+          <span class="skill-name">UBUNTU</span>
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="Images/kali_linux logo perk.png" class="PerksImg">
+          <span class="skill-name">KALI-LINUX</span>
+        </div>
+        <div class="skill">
+          <img src="Images/root me logo perk.png" class="PerksImg">
+          <span class="skill-name">ROOT ME</span>
+        </div>
+        <div class="skill">
+          <img src="Images/debian logo perk.png" class="PerksImg">
+          <span class="skill-name">DEBIAN</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="Stages" class="section">
+      <h2>Mes stages</h2>
+      <div class="column">
+        <div class="rectangle">
+          <h2>Stage au café 1000 vies</br>Année 2022-2023</h2>
+        </div>
+        <div class="rectangle">
+          <p>J'ai fait un stage dans un café associatif, je devais refaire leur site afin de rajouter des choses ainsi que de modifier des pages.</p>
+          <a href="Fichiers/Adrien Bermejo Garcia rapport de stage.pdf" target="_blank" download><button>Télécharger le PDF</button></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>Stage dans la conserverie TerraDouceurs</br>Année 2023-2024</h2>
+        </div>
+        <div class="rectangle">
+          <p>J'ai fait un stage dans la conserverie de TerraDouceurs, je devais fournir un site permettant aux agriculteurs de pouvoir prendre rendez vous pour une prestation</p>
+          <a href="https://leschassagnes1.sharepoint.com/:o:/s/SLAM2024/EoPcC3Ko1J9LtVvFA0v8L5ABykx-v52szqH4Ze1ncSw7nA?e=w3a5x1" target="_blank"><button>Lien vers le OneNote</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Travaux" class="section">
+      <h2>Mes travaux</h2>
+      <div class="column">
+        <div class="rectangle">
+          <h2>Projet Csharp</h2>
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>Projet Laravel</h2>
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>Projet VueJS</h2>
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>GLPI</h2>
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>MOOC Anssi</h2>
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rectangle">
+          <h2>MOOC CNIL</h2>
+          <p>Content</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Veille" class="section">
+      <h2>Ma veille technologique</h2>
+      <p>J'ai décidé de faire un veille technologique sur un theme qui me tient un coeur, le jeu vidéo.</p>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR2N54EvexYkEdNUFAJOFIbxtFmM_C1gmHS9Vc7Lqfalf2g-luLjoXwczNQHzxVtw/embed?start=true&loop=true&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+    </div>
+
+    <div id="Feuille" class="section">
+      <h2>Ma feuille de synthèse</h2>
+      <p>Si jamais la feuille de synthèse à du mal à charger vous pouvez cliquer sur le bouton en dessous</p>
+      <a href="Fichiers/Tableau de synthèse Adrien Bermejo Garcia.pdf" target="_blank" download><button>Télécharger le PDF</button></a>
+      <iframe src="Fichiers/Tableau de synthèse Adrien Bermejo Garcia.pdf" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+
+    </body>
+    <footer>
+      <div class="Coordonates">
+          <ul>Coordonnées: 
+          <li>Numéro de téléphone: 06 51 80 21 01 </li>
+          <li>Adresse mail: adrienbermejogarcia@leschassagnes.net</li>
+          <li>Corbas, France</li>
+      </ul>
+      <div>
+  </footer>
+</html> 

@@ -1,0 +1,390 @@
+@font-face{
+    font-family: Roboto;
+    src: url(E:/Font/Roboto-Condensed-Light.ttf) format('truetype');
+    src: url(E:/Fonts/Roboto-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-size:normal;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(51, 21, 65, 255);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box; 
+  border-bottom: 2px solid white; 
+}
+
+h2 {
+  color: white; /* Set the text color to white */
+}
+
+.logo {
+  padding: 10px 20px; 
+  border: 2px solid white; 
+  border-radius: 5px; 
+}
+
+.logo span {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+header > div {
+    display: flex;
+    justify-content:flex-end;
+}
+
+body{
+    background-color:black;
+    color:white;
+    padding-top:80px;
+    padding-bottom: 150px;
+}
+
+section {
+  margin-top: 60px; 
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  flex: 0 0 25%; 
+  position: relative;
+}
+
+.skill-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill:hover .skill-name {
+  opacity: 1;
+}
+
+#Travaux h2 {
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(51, 21, 65, 255);
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+}
+
+.Coordonates {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  color: white;
+}
+
+.PerksImg{
+    width:150px;
+}
+
+#Profile{
+    font-family: url(Font/Roboto-Light.ttf);
+    display:none;
+}
+
+#Veille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#Veille iframe {
+  margin-top: 20px; 
+}
+
+#Competences {
+  font-family: url(Font/Roboto-Light.ttf);
+    display:none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#Competences .skills-container {
+  margin-top: 20px; 
+}
+
+#Feuille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#Feuille iframe {
+  margin-top: 20px; 
+}
+
+#Stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.column {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.rectangle {
+  background-color: rgb(51, 21, 65, 255);
+  border: 2px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle h2 {
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rectangle p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.rectangle button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.rectangle button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------- Fog ---------- */
+.fogwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Rest of your CSS for the fog */
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image01, .image02 {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+}
+
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+  #foglayer_01 {
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  }
+  #foglayer_02, #foglayer_03 {
+    -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  }
+  
+  /* ---------- Moving Fog ---------- */
+  /*
+    'size: cover' || 'size: 100%'; results remain the same
+    'attachment: scroll' can be added or removed; results remain the same
+    'attachment: fixed' causing unexpected results in Chrome
+    'repeat-x' || 'no-repeat'; results remain the same
+  */ 
+  #foglayer_01 .image01, #foglayer_01 .image02 {
+    background: url("Images/fog1.png") center center/cover no-repeat transparent;
+  }
+  #foglayer_02 .image01, #foglayer_02 .image02,
+  #foglayer_03 .image01, #foglayer_03 .image02{
+    background: url("Images/fog2.png") center center/cover no-repeat transparent;
+  }
+  
+  /* ---------- Keyframe Layer 1 ---------- */
+  @-webkit-keyframes foglayer_01_opacity {
+    0% { opacity: .1; }
+    22% { opacity: .5; }
+    40% { opacity: .28; }
+    58% { opacity: .4; }
+    80% { opacity: .16; }
+    100% { opacity: .1; }
+  }
+  @-moz-keyframes foglayer_01_opacity {
+    0% { opacity: .1; }
+    22% { opacity: .5; }
+    40% { opacity: .28; }
+    58% { opacity: .4; }
+    80% { opacity: .16; }
+    100% { opacity: .1; }
+  }
+  @-o-keyframes foglayer_01_opacity {
+    0% { opacity: .1; }
+    22% { opacity: .5; }
+    40% { opacity: .28; }
+    58% { opacity: .4; }
+    80% { opacity: .16; }
+    100% { opacity: .1; }
+  }
+  @keyframes foglayer_01_opacity {
+    0% { opacity: .1; }
+    22% { opacity: .5; }
+    40% { opacity: .28; }
+    58% { opacity: .4; }
+    80% { opacity: .16; }
+    100% { opacity: .1; }
+  }
+  /* ---------- Keyframe Layer 2 ---------- */
+  @-webkit-keyframes foglayer_02_opacity {
+    0% { opacity: .5; }
+    25% { opacity: .2; }
+    50% { opacity: .1; }
+    80% { opacity: .3; }
+    100% { opacity: .5; }
+  }
+  @-moz-keyframes foglayer_02_opacity {
+    0% { opacity: .5; }
+    25% { opacity: .2; }
+    50% { opacity: .1; }
+    80% { opacity: .3; }
+    100% { opacity: .5; }
+  }
+  @-o-keyframes foglayer_02_opacity {
+    0% { opacity: .5; }
+    25% { opacity: .2; }
+    50% { opacity: .1; }
+    80% { opacity: .3; }
+    100% { opacity: .5; }
+  }
+  @keyframes foglayer_02_opacity {
+    0% { opacity: .5; }
+    25% { opacity: .2; }
+    50% { opacity: .1; }
+    80% { opacity: .3; }
+    100% { opacity: .5; }
+  }
+  /* ---------- Keyframe Layer 3 ---------- */
+  @-webkit-keyframes foglayer_03_opacity {
+    0% { opacity: .8 }
+    27% { opacity: .2; }
+    52% { opacity: .6; }
+    68% { opacity: .3; }
+    100% { opacity: .8; }
+  }
+  @-moz-keyframes foglayer_03_opacity {
+    0% { opacity: .8 }
+    27% { opacity: .2; }
+    52% { opacity: .6; }
+    68% { opacity: .3; }
+    100% { opacity: .8; }
+  }
+  @-o-keyframes foglayer_03_opacity {
+    0% { opacity: .8 }
+    27% { opacity: .2; }
+    52% { opacity: .6; }
+    68% { opacity: .3; }
+    100% { opacity: .8; }
+  }
+  @keyframes foglayer_03_opacity {
+    0% { opacity: .8; }
+    27% { opacity: .2; }
+    52% { opacity: .6; }
+    68% { opacity: .3; }
+    100% { opacity: .8; }
+  }
+  /* ---------- Keyframe moveMe ---------- */
+  @-webkit-keyframes foglayer_moveme {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+  @-moz-keyframes foglayer_moveme {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+  @-o-keyframes foglayer_moveme {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+  @keyframes foglayer_moveme {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+  
+  @media only screen
+    and (min-width: 280px)
+    and (max-width: 767px) {
+      #foglayer_01 .image01, #foglayer_01 .image02,
+      #foglayer_02 .image01, #foglayer_02 .image02,
+      #foglayer_03 .image01, #foglayer_03 .image02 {
+        width: 100%;
+      }
+    }
